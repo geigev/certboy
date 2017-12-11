@@ -1,0 +1,28 @@
+{
+  "name": "certboy",
+  "version": "1.0.0",
+  "description": "Requires a .env file to run.",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "node node_modules/eslint/bin/eslint.js --ignore-path .eslintignore -c .eslintrc.yml ./",
+    "start": "node server.js",
+    "precommit": "npm-run-all --parallel eslint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "cookie-parser": "1.4.3",
+    "express": "4.16.2",
+    "method-override": "2.3.10"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-plugin-import": "2.2.0",
+    "husky": "0.14.3",
+    "nodemon": "1.11.0",
+    "npm-run-all": "4.1.1",
+    "underscore": "1.8.3"
+  }
+}

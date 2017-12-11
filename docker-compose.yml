@@ -1,0 +1,13 @@
+version: "2"
+
+
+services:
+  certboy:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./container:/app
+      - /app/node_modules
+    ports:
+      - "80:80"
